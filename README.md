@@ -1,20 +1,20 @@
 # projetluxe_front2
 
-# install on computeur
+##install on computeur
 $ git clone https://github.com/Linaerith/projetluxe-front.git
 
-# go where you cloned the repository
+##go where you cloned the repository
 $ cd <repository-path>
 
-# install dependencies
+#install dependencies
 $ npm install # Or yarn install
 
-# serve with hot reload at localhost:3000
+#serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+#build for production and launch server
 $ npm run build
 $ npm start
 
-# generate static project
+#generate static project
 $ npm run generate
