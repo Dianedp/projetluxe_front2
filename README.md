@@ -1,7 +1,7 @@
 # projetluxe_front2
 
 ##install on computeur
-$ git clone https://github.com/Linaerith/projetluxe-front.git
+$ git clone https://github.com/Dianedp/projetluxe_front2.git
 
 ##go where you cloned the repository
 $ cd <repository-path>
