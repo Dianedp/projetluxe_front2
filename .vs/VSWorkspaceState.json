@@ -4,8 +4,9 @@
     "\\components",
     "\\layouts",
     "\\pages",
+    "\\pages\\clients",
     "\\pages\\concierge"
   ],
-  "SelectedNode": "\\assets",
+  "SelectedNode": "\\components\\NavSidebar.vue",
   "PreviewInSolutionExplorer": false
 }

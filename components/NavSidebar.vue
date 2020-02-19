@@ -1,15 +1,21 @@
 <template>
   <nav>
-    <v-app-bar app dense prominent extension-height="35px">
+    <v-app-bar app dense  extension-height="35px">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-
+      <v-toolbar-title>
         <v-col align="center" justify="center">
-          <v-img class="image" :src="require('~/assets/logoJP.png')" width="80" height="47"></v-img>
+          
           <div class="title">FW Manager</div>
         </v-col>
+      </v-toolbar-title>
+      <!-- <v-col align="center" justify="center">
+    <v-img class="image" :src="require('~/assets/logoJP.png')" width="80" height="47"></v-img>
+    <div class="title">FW Manager</div>
+        
+  </v-col>-->
 
-
+      <v-spacer></v-spacer>
 
 
       <v-toolbar-items class="toolbar1">
@@ -32,6 +38,13 @@
       </template>
     </v-app-bar>
     <v-navigation-drawer app v-model="drawer" class="secondary">
+      <v-layout column align-center>
+        <v-flex class="mt-6">
+          
+            <v-img class="image" :src="require('~/assets/logoJP.png')" width="80" height="47"></v-img>
+          
+        </v-flex>
+      </v-layout>
       <v-list>
         <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
           <v-list-item-action>
@@ -41,6 +54,16 @@
             <v-list-item-title class="white--text">{{link.text}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list>
+          <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
+            <v-list-item-action>
+              <v-icon class="white--text">{{link.icon}}</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title class="white--text">{{link.text}}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
       </v-list>
     </v-navigation-drawer>
   </nav>
@@ -53,9 +76,9 @@
       return {
         drawer: false,
         links: [
-          { icon: 'dashboard', text: 'Mes Clients', route: '/clients' },
-          { icon: 'folder', text: 'Ma Messagerie', route: '/inbox' },
-          { icon: 'dashboard', text: 'Mes Budgets', route: '/clients/budget' },
+          { icon: 'assignment_ind', text: 'Mes Clients', route: '/clients' },
+          { icon: 'mail', text: 'Ma Messagerie', route: '/inbox' },
+          { icon: 'attach_money', text: 'Mes Budgets', route: '/clients/budget' },
         ]
 
       }
@@ -75,7 +98,6 @@
     color: #FFD400;
     font-size: 20px;
     text-align: center;
-
   }
   .toolbartitle{
 
