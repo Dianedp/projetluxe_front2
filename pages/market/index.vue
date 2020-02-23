@@ -18,7 +18,7 @@
               <v-card-actions>
                 <v-btn text>
                   <v-icon small left color="grey">bookmark</v-icon>
-                  <span class="grey--text">Accéder</span>
+                  <span class="grey--text">Accés</span>
                 </v-btn>
               </v-card-actions>
             </v-card>
