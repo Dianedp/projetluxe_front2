@@ -85,6 +85,10 @@
                 <v-divider></v-divider>
               </v-card>
             </div>
+            <v-btn text to="/forms2">
+              <v-icon small left color="grey">people</v-icon>
+              <span class="grey--text">Ajouter un client</span>
+            </v-btn>
             <!--flex of budget class-->
           </v-flex>
           <v-flex xs12 md3 class="budget">

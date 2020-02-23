@@ -16,9 +16,13 @@
                 <div class="grey--text">{{market.dates}}</div>
               </v-card-text>
               <v-card-actions>
-                <v-btn text>
+                <v-btn text to="/superviseur">
                   <v-icon small left color="grey">bookmark</v-icon>
                   <span class="grey--text">Accés</span>
+                </v-btn>
+                <v-btn text to="/forms2/client">
+                  <v-icon small left color="grey">people</v-icon>
+                  <span class="grey--text">Ajouter VIP</span>
                 </v-btn>
               </v-card-actions>
             </v-card>

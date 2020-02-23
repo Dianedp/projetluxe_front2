@@ -30,7 +30,7 @@
 
         <v-toolbar-items>
 
-          <v-btn text to="/concierge">ACCUEIL</v-btn>
+          <v-btn text to="/market">ACCUEIL</v-btn>
           <v-btn text to="/clients">MES CLIENTS</v-btn>
           <v-btn text to="/inbox">MA MESSAGERIE</v-btn>
         </v-toolbar-items>
